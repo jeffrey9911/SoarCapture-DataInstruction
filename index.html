@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Soar Capture Dataset Instruction and Directory</title>
+</head>
+<body>
+
+<h3><strong>Soar Capture Dataset Instruction and Directory</strong></h3>
+<h4><strong>Introduction:</strong></h4>
+<p>This is a dataset of Soar Capture.</p>
+<p><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures</em></span></strong> contains all the data we captured by Soar Capture Suite as well as outputs data exported by Soar Capture Suite software.</p>
+<h4><strong>Format of each data piece:</strong></h4>
+<p>Each piece of capture data is organized to a specific folder. The name of the data piece folder contains abstract information of the data piece.</p>
+<p>The format is presented as <strong><span style="background-color: #ced4d9;"><em>{Name}-{Action}({More action detail})-{Capture count}-{Optional Tag}</em></span></strong></p>
+<ul>
+    <li><span style="font-size: 10pt;"><strong>Example 1:</strong> <span style="background-color: #ced4d9;"><em>Jeffrey-Walk(Moving)-00-B</em></span> means this piece of data is the first(00) capture for Jeffrey, performing a moving walking action. "-B" means the exported data is somehow broken and is not readable for Soar Viewer.</span></li>
+    <li><span style="font-size: 10pt;"><strong>Example 2:</strong> <span style="background-color: #ced4d9;"><em>Joseph-Idle(TPose)-01</em></span> means this piece of data is the second(01) capture for Joseph, performing a T-Pose Idle action.</span></li>
+</ul>
+<p><span style="font-size: 12pt;">The data in each folder has random name that does NOT mean anything but also not changeable unless to export them again with desired names. Below is an example of how the format of the file matters:</span></p>
+<ul>
+    <li><span style="font-size: 12pt;"><span style="background-color: #ced4d9;"><em>{Random}.srd:</em></span> Soar capture raw data.</span></li>
+    <li><span style="font-size: 12pt;"><span style="background-color: #ced4d9;"><em>{Random}.tml:</em></span> Soar capture raw data.</span></li>
+    <li><span style="font-size: 12pt;"><span style="background-color: #ced4d9;"><em>{Random}.mp4:</em></span> Exported texture for each frame.</span></li>
+    <li><span style="font-size: 12pt;"><span style="background-color: #ced4d9;"><em>{Random}.sgv:</em></span> Exported vector graphics.</span></li>
+    <li><span style="font-size: 12pt;"><span style="background-color: #ced4d9;"><em>{Random}_geometry.m3u8:</em></span> Exported media file for geometry.</span></li>
+    <li><span style="font-size: 12pt;"><span style="background-color: #ced4d9;"><em>{Random}_master.m3u8:</em></span> Exported master media file for SDK and software to load and play the capture.</span></li>
+    <li><span style="font-size: 12pt;"><span style="background-color: #ced4d9;"><em>{Random}_texture.m3u8:</em></span> Exported media file for texture.</span></li>
+</ul>
+<p><span style="font-size: 12pt;">Dataset directory and category explanation:</span></p>
+<ul>
+    <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Full" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Full</em></span></strong></a> - Captures that focusing on the <span style="text-decoration: underline;">full body</span> of participants</span>
+        <ul>
+            <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Full/.Idle" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Full/.Idle</em></span></strong></a> - All full body captures for <span style="text-decoration: underline;">idle</span> action</span></li>
+            <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Full/.Jump" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Full/.Jump</em></span></strong></a> - All full body captures for <span style="text-decoration: underline;">jumping</span> action</span></li>
+            <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Full/.Run" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Full/.Run</em></span></strong></a> - All full body captures for <span style="text-decoration: underline;">running</span> action</span></li>
+            <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Full/.Walk" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Full/.Walk</em></span></strong></a> - All full body captures for <span style="text-decoration: underline;">walking</span> action</span></li>
+        </ul>
+    </li>
+    <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Upper" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Upper</em></span></strong></a> contains</span>
+        <ul>
+            <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Upper/.Face" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Upper/.Face</em></span></strong></a> - All upper body captures focusing on <span style="text-decoration: underline;">face detail</span></span></li>
+            <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Upper/.Idle" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Upper/.Idle</em></span></strong></a> - All upper body captures for <span style="text-decoration: underline;">idle</span> action</span></li>
+            <li><span style="font-size: 12pt;"><a class="inline_disabled" href="./Captures/Upper/.Wave" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 12pt; background-color: #ced4d9;"><em>./Captures/Upper/.Wave</em></span></strong></a> - All upper body captures for <span style="text-decoration: underline;">waving</span> action</span></li>
+        </ul>
+    </li>
+</ul>
+
+<h4><strong>Previews:</strong></h4>
+<table style="border-collapse: collapse; width: 80%; height: 1265px;" border="1">
+    <tbody>
+        <tr style="height: 28px;">
+            <td style="width: 10%; height: 28px; text-align: center;"><span style="font-size: 14pt;"><strong>Participant</strong></span></td>
+            <td style="width: 30%; height: 28px; text-align: center;"><span style="font-size: 14pt;"><strong>Capture Focus</strong></span></td>
+            <td style="width: 30%; height: 28px; text-align: center;"><span style="font-size: 14pt;"><strong>Action</strong></span></td>
+            <td style="width: 30%; height: 28px; text-align: center;"><span style="font-size: 14pt;"><strong>Preview</strong></span></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="height: 223px; width: 8.78128%; text-align: center; vertical-align: top;" rowspan="8"><em><strong>Jeffrey</strong></em></td>
+            <td style="height: 167px; width: 18.1301%; text-align: center;" rowspan="6">Full Body</td>
+            <td style="width: 17.7304%; height: 28px; text-align: right;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 28px;"><a href="https://gyazo.com/fd31be63b0e78ea689997501b78a0cca"><img src="https://i.gyazo.com/fd31be63b0e78ea689997501b78a0cca.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 17.7304%; height: 28px; text-align: right;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 28px;"><a href="https://gyazo.com/0125f05848c51a068e55d9b8a5f799d8"><img src="https://i.gyazo.com/0125f05848c51a068e55d9b8a5f799d8.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 17.7304%; height: 28px; text-align: right;">Jump (In-place)</td>
+            <td style="width: 42.8317%; height: 28px;"><a href="https://gyazo.com/5f369c792832ed17577cf1afe1dab6ff"><img src="https://i.gyazo.com/5f369c792832ed17577cf1afe1dab6ff.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 17.7304%; height: 27px; text-align: right;">Run (In-place)</td>
+            <td style="width: 42.8317%; height: 27px;"><a href="https://gyazo.com/41092164db7bac8239bd159a35e8df96"><img src="https://i.gyazo.com/41092164db7bac8239bd159a35e8df96.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 17.7304%; height: 28px; text-align: right;">Run (In-place)</td>
+            <td style="width: 42.8317%; height: 28px;"><a href="https://gyazo.com/2691b5eb576ea922ec94b17d816fe877"><img src="https://i.gyazo.com/2691b5eb576ea922ec94b17d816fe877.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 17.7304%; height: 28px; text-align: right;">Walk (Moving)</td>
+            <td style="width: 42.8317%; height: 28px;"><a href="https://gyazo.com/37f65ae2c32901da3376a23080a12918"><img src="https://i.gyazo.com/37f65ae2c32901da3376a23080a12918.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="height: 56px; width: 18.1301%; text-align: center;" rowspan="2">Upper Body</td>
+            <td style="width: 17.7304%; height: 28px; text-align: right;">Idle (Head)</td>
+            <td style="width: 42.8317%; height: 28px;"><a href="https://gyazo.com/8988ea2973fdc3a53866526e17273862"><img src="https://i.gyazo.com/8988ea2973fdc3a53866526e17273862.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 17.7304%; height: 28px; text-align: right;">Wave (Head)</td>
+            <td style="width: 42.8317%; height: 28px;"><a href="https://gyazo.com/eb0379307caec3ed63d899819de621a4"><img src="https://i.gyazo.com/eb0379307caec3ed63d899819de621a4.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="height: 405px; text-align: center; width: 8.78128%; vertical-align: top;" rowspan="14"><em><strong>Joseph</strong></em></td>
+            <td style="height: 260px; text-align: center; width: 18.1301%;" rowspan="9">Full Body</td>
+            <td style="width: 17.7304%; height: 28px; text-align: right;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 28px;"><a href="https://gyazo.com/d4001f1ad03699043b06e528ebf72a7a"><img src="https://i.gyazo.com/d4001f1ad03699043b06e528ebf72a7a.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/cd6bad379729c16bc0250500e30689b7"><img src="https://i.gyazo.com/cd6bad379729c16bc0250500e30689b7.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (TPose)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/1cf2447165651505555e681e4269c87f"><img src="https://i.gyazo.com/1cf2447165651505555e681e4269c87f.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (TPose)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/1486c9d42ffb017a8d80a8a9a8bdf088"><img src="https://i.gyazo.com/1486c9d42ffb017a8d80a8a9a8bdf088.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Run (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/ffb86de789805823792c3b36487bc104"><img src="https://i.gyazo.com/ffb86de789805823792c3b36487bc104.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Jump (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/9d81578c77dbcc8ea7c3057c7851c489"><img src="https://i.gyazo.com/9d81578c77dbcc8ea7c3057c7851c489.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Jump (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/7b8488fec6eb8751cd9c4fb9179a7b69"><img src="https://i.gyazo.com/7b8488fec6eb8751cd9c4fb9179a7b69.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Run (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/865d5940ff56eb5a08613a8cbef49ea0"><img src="https://i.gyazo.com/865d5940ff56eb5a08613a8cbef49ea0.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Walk (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/c693f356e9a2b7e9f86bb76b324562e9"><img src="https://i.gyazo.com/c693f356e9a2b7e9f86bb76b324562e9.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="height: 145px; text-align: center; width: 18.1301%;" rowspan="5">Upper Body</td>
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/eea1a0b73507bb51bd6af91b4c800d85"><img src="https://i.gyazo.com/eea1a0b73507bb51bd6af91b4c800d85.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/4501064e19e191855cf5ba945b87e18e"><img src="https://i.gyazo.com/4501064e19e191855cf5ba945b87e18e.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/3a04c886ca40a2dff2336ef68a01c574"><img src="https://i.gyazo.com/3a04c886ca40a2dff2336ef68a01c574.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/c19fb43a1275dd67fee564ee02a85c7b"><img src="https://i.gyazo.com/c19fb43a1275dd67fee564ee02a85c7b.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Wave (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/484f82378e452fd5a0b9cc8fba02d78e"><img src="https://i.gyazo.com/484f82378e452fd5a0b9cc8fba02d78e.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="height: 232px; text-align: center; width: 8.78128%; vertical-align: top;" rowspan="8"><em><strong>Maxwell</strong></em></td>
+            <td style="height: 174px; text-align: center; width: 18.1301%;" rowspan="6">Full Body</td>
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/be958695bde0445df1638d188d38185b"><img src="https://i.gyazo.com/be958695bde0445df1638d188d38185b.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/95908a8f9f11646ae6e6463522716188"><img src="https://i.gyazo.com/95908a8f9f11646ae6e6463522716188.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/d2f8bfa0f81be01fbdce6b4ce5d902e3"><img src="https://i.gyazo.com/d2f8bfa0f81be01fbdce6b4ce5d902e3.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Jump (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/42bc4fb962535b8ff4446a6fb0c79885"><img src="https://i.gyazo.com/42bc4fb962535b8ff4446a6fb0c79885.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Run (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/2ff1b469d8a594e605ae57cb3ea3df45"><img src="https://i.gyazo.com/2ff1b469d8a594e605ae57cb3ea3df45.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Walk (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/aa48e7b5e9139aa0d30b1e5aa8c49801"><img src="https://i.gyazo.com/aa48e7b5e9139aa0d30b1e5aa8c49801.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="text-align: center; width: 18.1301%; height: 58px;" rowspan="2">Upper Body</td>
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Idle (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/6cd3d7490a74e201b4f2805974d5ab7f"><img src="https://i.gyazo.com/6cd3d7490a74e201b4f2805974d5ab7f.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Wave (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/7ce026c5c6de07070edfce899bc08dd4"><img src="https://i.gyazo.com/7ce026c5c6de07070edfce899bc08dd4.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="text-align: center; height: 290px; width: 8.78128%; vertical-align: top;" rowspan="10"><em><strong>Nicholas</strong></em></td>
+            <td style="text-align: center; height: 174px; width: 18.1301%;" rowspan="6">Full Body</td>
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/97667465d4c518450ef4171a164afce5"><img src="https://i.gyazo.com/97667465d4c518450ef4171a164afce5.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Idle (Idle)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/b8d61a05fd374fcb559f09befe4b2cf8"><img src="https://i.gyazo.com/b8d61a05fd374fcb559f09befe4b2cf8.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Jump (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/252f3b8771671002a26e97a85668e773"><img src="https://i.gyazo.com/252f3b8771671002a26e97a85668e773.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Jump (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/7cb0719f57bb757b9ac9c0ca55f829d8"><img src="https://i.gyazo.com/7cb0719f57bb757b9ac9c0ca55f829d8.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; height: 29px; text-align: right;">Run (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/05be8e4980975dd02b7ba25dc10bb1a6"><img src="https://i.gyazo.com/05be8e4980975dd02b7ba25dc10bb1a6.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Walk (In-place)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/f1a2d345a52f6c0bd190964b780cd9f9"><img src="https://i.gyazo.com/f1a2d345a52f6c0bd190964b780cd9f9.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="text-align: center; height: 116px; width: 18.1301%;" rowspan="4">Upper Body</td>
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Face (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/857088b43e6c9560aed99879a7c9c8b9"><img src="https://i.gyazo.com/857088b43e6c9560aed99879a7c9c8b9.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Face (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/2d6c050b488fa36580a130297bdede33"><img src="https://i.gyazo.com/2d6c050b488fa36580a130297bdede33.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Idle (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/0f2264a937f5ba751243e04c92b9e446"><img src="https://i.gyazo.com/0f2264a937f5ba751243e04c92b9e446.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 17.7304%; text-align: right; height: 29px;">Wave (Head)</td>
+            <td style="width: 42.8317%; height: 29px;"><a href="https://gyazo.com/eba67b0a65bd5723c2c2382dd583ca58"><img src="https://i.gyazo.com/eba67b0a65bd5723c2c2382dd583ca58.gif" alt="Image from Gyazo" width="500"/></a></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
